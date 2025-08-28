@@ -1,2 +1,32 @@
 # irirs-classificatioin-project
-🌸 Iris Species Classification: A Machine Learning & Deep Learning ComparisonIntroductionThis repository contains a project focused on the classic Iris dataset, a foundational problem in machine learning. The goal is to build models that can accurately classify Iris flowers into one of three species—'setosa', 'versicolor', or 'virginica'—based on their sepal and petal measurements.The project explores two distinct approaches to this task:A traditional Machine Learning model: Random Forest Classifier.A Deep Learning model: a simple neural network built with Keras.The project demonstrates each step of the machine learning pipeline, from data preparation to final prediction, while highlighting the key differences between these two powerful techniques.Problem Statement & ObjectiveThe core problem is multi-class classification on a structured dataset. We are given four features for each flower (sepal length, sepal width, petal length, and petal width) and must build a model that can predict the correct species.The objective is to not only achieve high accuracy but also to understand the fundamental differences in workflow, architecture, and training between a Random Forest model and a Deep Learning model.Model ComparisonThe table below provides a side-by-side comparison of the two models at each major step of the machine learning process.StepRandom Forest (Machine Learning)Deep Learning (Neural Network)Input PreparationRequires feature scaling (e.g., using StandardScaler). The target labels (y) are used directly as integer values (e.g., 0, 1, 2).Requires feature scaling and the target labels (y) must be converted into a one-hot encoded array (e.g., [0, 1, 0]).Model ArchitectureAn ensemble model composed of many independent Decision Trees. The model's complexity is based on the number of trees and their depth.A neural network with a series of interconnected layers (input, hidden, and output) and nodes (neurons). Each node has an activation function.Model TrainingA single, non-iterative process. The model.fit() function builds all the trees at once. The model does not learn over a series of epochs.An iterative process where the model learns over a defined number of epochs. It adjusts its internal weights and biases to minimize a loss function.PredictionWhen making a prediction, the model outputs the final predicted class label directly (e.g., 1).The model's output layer produces a vector of probabilities (e.g., [0.05, 0.9, 0.05]). The final predicted class is the one with the highest probability.Expected PredictionsBoth models are expected to achieve very high accuracy on the Iris dataset, likely in the range of 95-100%. The simplicity and linear separability of the Iris data make it a good fit for both traditional machine learning and more advanced deep learning techniques. While the two models approach the problem differently, they should arrive at a similar, accurate conclusion.This repository allows you to run both models and compare their performance, showcasing that the most complex solution isn't always necessary for simple, well-structured problems.
+🌸 Iris Species Classification: A Machine Learning & Deep Learning Comparison
+Introduction
+This repository contains a project focused on the classic Iris dataset, a foundational problem in machine learning. The goal is to build models that can accurately classify Iris flowers into one of three species—'setosa', 'versicolor', or 'virginica'—based on their sepal and petal measurements.
+The project explores two distinct approaches to this task:
+A traditional Machine Learning model: Random Forest Classifier.
+A Deep Learning model: a simple neural network built with Keras.
+The project demonstrates each step of the machine learning pipeline, from data preparation to final prediction, while highlighting the key differences between these two powerful techniques.
+Problem Statement & Objective
+The core problem is multi-class classification on a structured dataset. We are given four features for each flower (sepal length, sepal width, petal length, and petal width) and must build a model that can predict the correct species.
+The objective is to not only achieve high accuracy but also to understand the fundamental differences in workflow, architecture, and training between a Random Forest model and a Deep Learning model.
+Model Comparison
+The table below provides a side-by-side comparison of the two models at each major step of the machine learning process.
+Step
+Random Forest (Machine Learning)
+Deep Learning (Neural Network)
+Input Preparation
+Requires feature scaling (e.g., using StandardScaler). The target labels (y) are used directly as integer values (e.g., 0, 1, 2).
+Requires feature scaling and the target labels (y) must be converted into a one-hot encoded array (e.g., [0, 1, 0]).
+Model Architecture
+An ensemble model composed of many independent Decision Trees. The model's complexity is based on the number of trees and their depth.
+A neural network with a series of interconnected layers (input, hidden, and output) and nodes (neurons). Each node has an activation function.
+Model Training
+A single, non-iterative process. The model.fit() function builds all the trees at once. The model does not learn over a series of epochs.
+An iterative process where the model learns over a defined number of epochs. It adjusts its internal weights and biases to minimize a loss function.
+Prediction
+When making a prediction, the model outputs the final predicted class label directly (e.g., 1).
+The model's output layer produces a vector of probabilities (e.g., [0.05, 0.9, 0.05]). The final predicted class is the one with the highest probability.
+
+Expected Predictions
+Both models are expected to achieve very high accuracy on the Iris dataset, likely in the range of 95-100%. The simplicity and linear separability of the Iris data make it a good fit for both traditional machine learning and more advanced deep learning techniques. While the two models approach the problem differently, they should arrive at a similar, accurate conclusion.
+This repository allows you to run both models and compare their performance, showcasing that the most complex solution isn't always necessary for simple, well-structured problems.
