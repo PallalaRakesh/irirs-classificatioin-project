@@ -26,11 +26,12 @@ The objective is to not only achieve high accuracy but also to understand the fu
 
 The table below provides a side-by-side comparison of the two models at each major step of the machine learning process.
 
-| **Step** | **Random Forest (Machine Learning)** | **Deep Learning (Neural Network)** | 
-| **Input Preparation** | Requires **feature scaling** (e.g., using `StandardScaler`). The target labels (`y`) are used directly as integer values (e.g., 0, 1, 2). | Requires **feature scaling** and the target labels (`y`) must be converted into a **one-hot encoded** array (e.g., `[0, 1, 0]`). | 
-| **Model Architecture** | An **ensemble model** composed of many independent Decision Trees. The model's complexity is based on the number of trees and their depth. | A **neural network** with a series of interconnected layers (input, hidden, and output) and nodes (neurons). Each node has an activation function. | 
-| **Model Training** | A single, non-iterative process. The `model.fit()` function builds all the trees at once. The model does not learn over a series of epochs. | An iterative process where the model learns over a defined number of **epochs**. It adjusts its internal weights and biases to minimize a loss function. | 
-| **Prediction** | When making a prediction, the model outputs the final predicted class label directly (e.g., `1`). | The model's output layer produces a vector of probabilities (e.g., `[0.05, 0.9, 0.05]`). The final predicted class is the one with the highest probability. | 
+| Step | Random Forest (Machine Learning) | Deep Learning (Neural Network) |
+| :--- | :--- | :--- |
+| **Input Preparation** | Requires **feature scaling** (e.g., using `StandardScaler`). The target labels (`y`) are used directly as integer values (e.g., 0, 1, 2). | Requires **feature scaling** and the target labels (`y`) must be converted into a **one-hot encoded** array (e.g., `[0, 1, 0]`). |
+| **Model Architecture** | An **ensemble model** composed of many independent Decision Trees. The model's complexity is based on the number of trees and their depth. | A **neural network** with a series of interconnected layers (input, hidden, and output) and nodes (neurons). Each node has an activation function. |
+| **Model Training** | A single, non-iterative process. The `model.fit()` function builds all the trees at once. The model does not learn over a series of epochs. | An iterative process where the model learns over a defined number of **epochs**. It adjusts its internal weights and biases to minimize a loss function. |
+| **Prediction** | When making a prediction, the model outputs the final predicted class label directly (e.g., `1`). | The model's output layer produces a vector of probabilities (e.g., `[0.05, 0.9, 0.05]`). The final predicted class is the one with the highest probability. |
 
 ---
 
